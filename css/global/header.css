@@ -1,5 +1,5 @@
 .header-bg {
-  background-color: #000000;
+  background-color: var(--cor-12);
 }
 
 .header {
@@ -10,8 +10,9 @@
   align-items: center;
   box-sizing: border-box;
   padding: 20px;
-  margin: 0 auto;
-  max-width: 1160px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .header-menu {
@@ -21,27 +22,23 @@
 }
 
 .header-menu a {
-  font-family: var(--font-1);
-  font-weight: 400;
   display: inline-block;
   padding: 16px 0px;
-  color: #ffffff;
-  font-size: 18px;
   position: relative;
 }
 
-.header-menu a::after {
+.header-menu a:after {
   content: "";
   display: block;
   height: 2px;
   width: 0px;
-  background: #ffffff;
+  background: var(--cor-0);
   margin-top: 4px;
   transition: 0.3s;
   position: absolute;
 }
 
-.header-menu a:hover::after {
+.header-menu a:hover:after {
   width: 100%;
 }
 
@@ -49,18 +46,15 @@
   .header-menu {
     gap: 20px;
   }
-
   .header-menu a {
-    background: #111111;
+    background: var(--cor-11);
     padding: 12px 16px;
     border-radius: 4px;
   }
-
   .header-menu a:hover {
-    background: #2E2E2E;
+    background-color: var(--cor-10);
   }
-
-  .header-menu a::after {
+  .header a:after {
     display: none;
   }
 }
@@ -69,7 +63,6 @@
   .header-menu {
     gap: 12px;
   }
-
   .header-menu a {
     padding: 8px 12px;
     font-size: 14px;
